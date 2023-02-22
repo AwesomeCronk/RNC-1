@@ -401,6 +401,7 @@
           <string>Description</string>
           <string>On +Clk Q+ inverts
 On -Clk Q- inverts
+~Q+ is always inverse of Q+
 
 Works by latching the value of Q- into
 the first D F-F on +Clk and latching the
@@ -415,12 +416,12 @@ invert Clk and Q from the first D F-F.</string>
       <elementName>Rectangle</elementName>
       <elementAttributes>
         <entry>
-          <string>Label</string>
-          <string>Clocked Invert</string>
-        </entry>
-        <entry>
           <string>RectHeight</string>
           <int>21</int>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>Clocked Invert</string>
         </entry>
         <entry>
           <string>RectWidth</string>
@@ -428,6 +429,30 @@ invert Clk and Q from the first D F-F.</string>
         </entry>
       </elementAttributes>
       <pos x="560" y="520"/>
+    </visualElement>
+    <visualElement>
+      <elementName>LightBulb</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Color</string>
+          <awt-color>
+            <red>255</red>
+            <green>204</green>
+            <blue>0</blue>
+            <alpha>255</alpha>
+          </awt-color>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>~Q+</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1020" y="840"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Ground</elementName>
+      <elementAttributes/>
+      <pos x="1020" y="900"/>
     </visualElement>
   </visualElements>
   <wires>
@@ -573,7 +598,7 @@ invert Clk and Q from the first D F-F.</string>
     </wire>
     <wire>
       <p1 x="940" y="700"/>
-      <p2 x="1140" y="700"/>
+      <p2 x="1020" y="700"/>
     </wire>
     <wire>
       <p1 x="1160" y="700"/>
@@ -586,6 +611,10 @@ invert Clk and Q from the first D F-F.</string>
     <wire>
       <p1 x="680" y="700"/>
       <p2 x="780" y="700"/>
+    </wire>
+    <wire>
+      <p1 x="1020" y="700"/>
+      <p2 x="1140" y="700"/>
     </wire>
     <wire>
       <p1 x="1280" y="200"/>
@@ -830,6 +859,14 @@ invert Clk and Q from the first D F-F.</string>
     <wire>
       <p1 x="760" y="200"/>
       <p2 x="760" y="220"/>
+    </wire>
+    <wire>
+      <p1 x="1020" y="880"/>
+      <p2 x="1020" y="900"/>
+    </wire>
+    <wire>
+      <p1 x="1020" y="700"/>
+      <p2 x="1020" y="840"/>
     </wire>
     <wire>
       <p1 x="700" y="620"/>
